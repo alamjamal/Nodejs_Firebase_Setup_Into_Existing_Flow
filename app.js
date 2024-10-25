@@ -15,16 +15,16 @@ app.use(bodyParser.json({ limit: "20mb", extended: true, parameterLimit: 1000 })
 
 app.use(cookieParser())
 
-const admin = require('firebase-admin');
-const serviceAccount = require('./firebaseSetup');
+// const admin = require('firebase-admin');
+// const serviceAccount = require('./firebaseSetup');
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-//   databaseURL: "https://your-database-name.firebaseio.com"
-});
+// admin.initializeApp({
+//   credential: admin.credential.cert(serviceAccount),
+// //   databaseURL: "https://your-database-name.firebaseio.com"
+// });
 
 
-
+console.log("checking new ")
 
 if (process.env.NODE_ENV === "production") {
 	//setup cors

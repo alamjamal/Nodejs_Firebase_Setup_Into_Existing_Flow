@@ -9,7 +9,7 @@ logs
 *.gz
 npm-debug.log*
 utils/.env*
-
+.DS_STORE
 
 # Runtime data
 pids

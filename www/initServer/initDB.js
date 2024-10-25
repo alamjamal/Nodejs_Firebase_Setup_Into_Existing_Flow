@@ -6,7 +6,7 @@ let db = null;
 let collection = null;
 
 const atlasConnectionString = process.env.MONGODB_URI
-const localConnectionString = 'mongodb://localhost:27017/jamal'; // Local fallback connection string
+const localConnectionString = 'mongodb://127.0.0.1:27017/alam'; // Local fallback connection string
 const connectionOptions = {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
